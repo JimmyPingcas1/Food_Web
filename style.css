@@ -1,40 +1,25 @@
+*{
+  font-family: sans-serif;
+}
 
-    body {
-      margin: 0;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-    .box {
-      background-color: #4CAF50;
-      padding: 20px;
-      color: white;
-      text-align: center;
-      border-radius: 8px;
-      box-sizing: border-box;
+.box{
+  width: 420px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-     
-      /* flex grow The box can grow if there is extra space.
-        flex shrink he box can shrink if there’s not enough space. */
-      flex: 1 1 300px; /* Grow, shrink, base size 300px */
-      max-width: 700px;
-      min-width: 250px;
-    }
-
-    .box h2 {
-      /*  1vw = 1% of the viewport width 
-          10vw = 10% of the viewport width
-          100vw = 100% of the viewport width (fills the full width) */
-          
-      /* clamp(min, preferred, max) */
-      font-size: clamp(1.2rem, 2.5vw, 2rem); /* Responsive text */
-      margin-bottom: 10px;
-    }
-
-    .box p {
-      font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive text for */
-    }
+.box p{
+  /* font-size: 12px; */
+}
