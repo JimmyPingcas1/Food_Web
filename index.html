@@ -4,54 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Boxes</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .box {
+      width: 420px;
+      height: 200px;
+      border-radius: 20px;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
 <body>
-    
   <div class="container">
-      
-    <div class="box">
-        <p>dkasdnaksdnakdnaksdna</p>
-    </div>
-
-    <div class="box">
-        <p>dkasdnaksdnakdnaksdna</p>
-    </div>
-
-    <div class="box">
-        <p>dkasdnaksdnakdnaksdna</p>
-    </div>
+    <div class="box"><p>dkasdnaksdnakdnaksdna</p></div>
+    <div class="box"><p>dkasdnaksdnakdnaksdna</p></div>
+    <div class="box"><p>dkasdnaksdnakdnaksdna</p></div>
   </div>
-
-
-
 </body>
 </html>
-
-<style>
-  *{
-  font-family: sans-serif;
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.box{
-  width: 420px;
-  height: 200px;
-  border-radius: 20px;
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box p{
-  /* font-size: 12px; */
-}
-</style>
